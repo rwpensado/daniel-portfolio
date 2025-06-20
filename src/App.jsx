@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // Fixed import statement
-import "tailwindcss";
+import 'tailwindcss';
 import purple_tux from './assets/purple_tux.jpg';
 import school from './assets/school.jpg';
 import u_of_h from './assets/u_of_h.jpg';
@@ -12,7 +12,7 @@ import cooking from './assets/cooking.jpg'
 // Main App component
 const App = () => {
   // State for current active section within the portfolio, defaulting to 'about'
-  const [activeSection, setActiveSection] = useState('about'); // Changed default to 'about'
+  const [activeSection, setActiveSection] = useState('about');
   // New state to control if the landing page is shown
   const [showLandingPage, setShowLandingPage] = useState(true);
 
@@ -28,7 +28,7 @@ const App = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
         <div className="md:w-1/3 flex justify-center">
           <img
-            src={school} // Placeholder for your photo
+            src={school}
             alt="school"
             className="rounded-full shadow-md border-4 border-purple-300 w-52 h-52 object-cover"
           />
@@ -197,23 +197,23 @@ const App = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 0a2 2 0 00-2-2H7a2 2 0 00-2 2v8a2 2 0 002 2h10a2 2 0 002-2V8z" />
             </svg>
-            <a href="mailto:daniel.israel.gonzalez778@gmail.com" className="text-purple-600 hover:underline">daniel.israel.gonzalez778@gmail.com</a>
+            <a href="mailto:daniel.israel.gonzalez778@gmail.com" className="text-purple-600 hover:underline">Insert Email Address Here</a>
           </div>
           {/* Phone (Optional) */}
           <div className="flex items-center text-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.135a11.042 11.042 0 005.516 5.516l1.135-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span className="text-gray-600">+1 (979) 574-5801</span>
+            <span className="text-gray-600">+1 (123) 456-7890</span>
           </div>
           {/* LinkedIn */}
           <div className="flex items-center text-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {/* LinkedIn icon path - simplified for example */}
+                {/* LinkedIn icon path */}
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                 <circle cx="4" cy="4" r="2" />
             </svg>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">LinkedIn Profile</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">LinkedIn Profile</a>
           </div>
         </div>
       </div>
@@ -229,7 +229,6 @@ const App = () => {
           {/* Abstract design elements */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-white bg-opacity-10 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-48 h-48 bg-white bg-opacity-10 rounded-full transform translate-x-1/2 translate-y-1/2"></div>
-          {/* Placeholder Image */}
           <img
             src={purple_tux}
             alt="purple_tux"
@@ -295,7 +294,6 @@ const App = () => {
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
               <h1 className="text-4xl font-extrabold mb-4 md:mb-0" style={{ fontFamily: 'Playfair Display, serif' }}>Daniel Gonzalez</h1>
               <nav className="space-x-3"> {/* Reduced space-x to 3 */}
-                {/* New About Me button */}
                 <button
                   onClick={() => setActiveSection('about')}
                   className={`px-3 py-1 rounded-full text-base font-medium transition-all duration-300
